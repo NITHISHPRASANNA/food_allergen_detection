@@ -8,10 +8,10 @@ import requests
 API_URL = "http://127.0.0.1:5000/predict"
 
 # Load the model
-model = joblib.load("../Model/Allergen_detection.pkl")
+model = joblib.load("Allergen_detection.pkl")
 
 # Load the encoder
-with open('../Model/leave_one_out_encoder.pkl', 'rb') as file:
+with open('leave_one_out_encoder.pkl', 'rb') as file:
     loaded_encoder = pickle.load(file)
 
 # Set Streamlit page config
