@@ -6,8 +6,8 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the trained model and encoder
-loaded_model = joblib.load("../Model/Allergen_detection.pkl")
-loaded_encoder = joblib.load('../Model/leave_one_out_encoder.pkl')
+loaded_model = joblib.load("Allergen_detection.pkl")
+loaded_encoder = joblib.load('leave_one_out_encoder.pkl')
 
 @app.route('/')
 def home():
